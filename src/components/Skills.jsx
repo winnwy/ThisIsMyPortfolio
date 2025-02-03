@@ -1,7 +1,7 @@
 const Skills = () => {
     const skills = {
-      Languages: ["Python", "JavaScript", "Java", "C/C++", "SQL", "HTML/CSS"],
-      Frameworks: ["React", "Django", "Node.js", "Spring Boot"],
+      Languages: ["Python", "JavaScript/TypeScript", "Java", "C/C++", "SQL", "HTML/CSS"],
+      Frameworks: ["React", "Django", "Node.js", "Flask"],
       Tools: ["Git", "Docker", "Postman", "VS Code", "IntelliJ IDEA"],
     };
   
