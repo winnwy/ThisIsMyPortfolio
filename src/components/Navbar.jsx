@@ -11,7 +11,7 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-full top-0 left-0 text-white p-4">
+    <nav className="mb-20 flex items-center justify-between py-6">
       <ul className="flex flex-col md:flex-row md:space-x-8">
         {navItems.map(({ name, path }) => (
           <li key={name}>
