@@ -3,15 +3,25 @@ import { Link } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi"; // Import icons for mobile menu
 
 const navItems = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Projects", path: "/projects" },
-  { name: "Skills", path: "/skills" },
-  { name: "Contact", path: "/contact" },
+  { name: "Home", id: "about" },
+  { name: "About", id: "about" },
+  { name: "Projects", id: "projects" },
+  { name: "Skills", id: "skills" },
+  { name: "Contact", id: "contact" },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const navbarHeight = 64; 
+      const yOffset = section.getBoundingClientRect().top + window.scrollY - navbarHeight;
+      window.scrollTo({ top: yOffset, behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
+
 
   return (
     <>
@@ -19,14 +29,14 @@ const Navbar = () => {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           {/* Desktop Navigation */}
           <ul className="hidden md:flex space-x-8">
-            {navItems.map(({ name, path }) => (
-              <li key={name}>
-                <Link
-                  to={path}
+            {navItems.map(({ name, id }) => (
+              <li key={id}>
+                <button
+                  onClick={() => scrollToSection(id)}
                   className="text-neutral-300 hover:text-purple-400 transition-colors duration-300"
                 >
                   {name}
-                </Link>
+                </button>
               </li>
             ))}
           </ul>
@@ -47,15 +57,14 @@ const Navbar = () => {
         } md:hidden`}
       >
         <ul className="flex flex-col items-center space-y-4">
-          {navItems.map(({ name, path }) => (
-            <li key={name}>
-              <Link
-                to={path}
+          {navItems.map(({ name, id }) => (
+            <li key={id}>
+              <button
+                onClick={() => scrollToSection(id)}
                 className="text-neutral-300 text-lg hover:text-purple-400 transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
               >
                 {name}
-              </Link>
+              </button>
             </li>
           ))}
         </ul>
