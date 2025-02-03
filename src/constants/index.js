@@ -1,76 +1,42 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import resumaniac from "../assets/projects/resumaniac/resumaniac.png"
+import personal_website from "../assets/projects/personal_website/personal_website.png"
+import cartoon_sheep from "../assets/projects/sheepy/cartoon_sheep.png"
+import etch_a_sketch from "../assets/projects/etch_a_sketch/etch_a_sketch.png"
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
-
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
-
-export const EXPERIENCES = [
-  {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
-];
+export const HERO_CONTENT = `Whether it’s building cool web experiences, coding backend magic, or diving into new tech, I love bringing ideas to life. When I’m not coding, I’m probably chasing the sunset on a run or getting lost in a creative rabbit hole!`;
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
+    title: "Resumaniac - Hackathon Project",
+    image: resumaniac,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "ResuManiac is a fun resume generator that transforms any image—whether a plant, pet, or object—into a quirky CV. From a houseplant as a “Senior Software Engineer” to a pet rock as “CEO of Microsoft,” each object also doubles as a superhero and can talk! ",
+    link: "https://terriblehack.com/portfolio/resumaniac/",
+    contributions: ["Collaborated with my teammate to build the complete frontend of ResuManiac using React and Tailwind CSS.", "Implemented a live cam video display feature.", " Created the layout and functionality to display the generated resumes."]
   },
   {
-    title: "Task Management App",
-    image: project2,
+    title: "Personal Website - DevSoc Trainee Project",
+    image: personal_website,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "This personal website was created as part of my application for the DevSoc Trainee Program, with a focus on the theme of time. Built using HTML, CSS, and JavaScript, it features interactive animations designed to engage visitors as they explore the site.",
+    link: "https://winnwy.github.io/winnie_website/"
   },
   {
-    title: "Portfolio Website",
-    image: project3,
+    title: "Sheepy - Course Assignment",
+    image: cartoon_sheep,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "SHEEPY is a shell-to-Python transpiler that converts shell scripts into Python code. It supports echo, for loops, if statements, and while loops etc. It also handles variable assignments and simple expressions.",
   },
   {
-    title: "Blogging Platform",
-    image: project4,
+    title: "Etch A Sketch - Online Course Project",
+    image: etch_a_sketch,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Etch-a-Sketch is an interactive drawing tool built using HTML, CSS, and JavaScript. Inspired by the classic Etch-a-Sketch toy, this web-based version allows users to draw on a grid of squares, with customizable features such as color selection, grid resizing, and drawing effects.",
+    link: "https://winnwy.github.io/etch-a-sketch/"
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  email: "winnwyz@gmail.com",
+  github: "https://github.com/winnwy"
 };
