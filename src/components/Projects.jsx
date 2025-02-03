@@ -1,5 +1,6 @@
 import React from "react";
 import { PROJECTS } from "../constants";
+
 const Projects = () => {
   return (
     <section className="py-20 border-b border-neutral-900">
@@ -26,6 +27,22 @@ const Projects = () => {
                   {project.title}
                 </h3>
                 <p className="text-neutral-400 mb-4">{project.description}</p>
+                
+                {/* My Contributions */}
+                {project.contributions && (
+                  <div className="text-neutral-400 mb-4">
+                    <h4 className="text-sm font-semibold text-neutral-300 mb-2">
+                      My Contributions:
+                    </h4>
+                    <ul className="list-disc pl-5">
+                      {project.contributions.map((contribution, idx) => (
+                        <li key={idx}>{contribution}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Project link */}
                 {project.link && (
                   <a
                     href={project.link}
