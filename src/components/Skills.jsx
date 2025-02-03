@@ -6,9 +6,9 @@ const Skills = () => {
     };
   
     return (
-      <section className="py-20 border-b border-neutral-900">
+      <section className="py-20">
         <div className="container mx-auto px-8">
-          <h2 className="text-4xl font-bold text-neutral-300 mb-12">Skills</h2>
+          <h2 className="text-4xl font-bold text-neutral-300 mb-12 text-center">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Object.entries(skills).map(([category, items]) => (
               <div key={category} className="bg-neutral-900 p-6 rounded-lg shadow-lg">

@@ -3,9 +3,9 @@ import { PROJECTS } from "../constants";
 
 const Projects = () => {
   return (
-    <section className="py-20 border-b border-neutral-900">
+    <section className="py-20">
       <div className="container mx-auto px-8">
-        <h2 className="text-4xl font-bold text-neutral-300 mb-12">Projects</h2>
+        <h2 className="text-4xl font-bold text-neutral-300 mb-12 text-center">Projects</h2>
         <div className="space-y-12">
           {PROJECTS.map((project, index) => (
             <div
