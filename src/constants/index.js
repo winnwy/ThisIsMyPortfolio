@@ -2,6 +2,7 @@ import resumaniac from "../assets/projects/resumaniac/resumaniac.png"
 import personal_website from "../assets/projects/personal_website/personal_website.png"
 import cartoon_sheep from "../assets/projects/sheepy/cartoon_sheep.png"
 import etch_a_sketch from "../assets/projects/etch_a_sketch/etch_a_sketch.png"
+import wordle from "../assets/projects/wordle/wordle.png"
 
 export const HERO_CONTENT = `Whether it’s building cool web experiences, coding backend magic, or diving into new tech, I love bringing ideas to life. When I’m not coding, I’m probably chasing the sunset on a run or getting lost in a creative rabbit hole!`;
 
@@ -33,6 +34,13 @@ export const PROJECTS = [
     description:
       "Etch-a-Sketch is an interactive drawing tool built using HTML, CSS, and JavaScript. Inspired by the classic Etch-a-Sketch toy, this web-based version allows users to draw on a grid of squares, with customizable features such as color selection, grid resizing, and drawing effects.",
     link: "https://winnwy.github.io/etch-a-sketch/"
+  },
+  {
+    title: "Wordle - Online Course Project",
+    image: wordle,
+    description:
+      "This is my implementation of the popular Wordle game using React, where players have to guess a hidden 5-letter word within six attempts. Each guess provides feedback on the correctness of the letters and their positions. The game includes an interactive keyboard that allows users to type or click letters. After completing the game, players can restart and play again.",
+    link: "https://github.com/winnwy/project-wordle"
   },
 ];
 
